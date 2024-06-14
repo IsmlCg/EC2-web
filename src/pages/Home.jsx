@@ -32,14 +32,14 @@ function Home() {
           title="Demo"
           subTitle="Subtitle"
           page={page1}
-          col="lg:col-span-5"
+          col="lg:col-span-7"
           color="bg-orange-200"
         />
         <Card
           title="Demo"
           subTitle="Subtitle"
           page={page}
-          col="lg:col-span-7"
+          col="lg:col-span-5"
           color="bg-sky-200"
         />
       </CardContent>
@@ -47,6 +47,23 @@ function Home() {
         title="In Progress."
         detail="Design and develop side projects from the beginning to the end, including software development, design development, and other stages."
       />
+      <CardContent>
+        <Card
+          title="Doodler"
+          subTitle="Multiplayer"
+          page={page1}
+          col="lg:col-span-7"
+          color="bg-white"
+        />
+        <Card
+          textColor="text-white"
+          title="Demo"
+          subTitle="Subtitle"
+          page={page}
+          col="lg:col-span-5"
+          color="bg-black"
+        />
+      </CardContent>
     </Layout>
   );
 }
