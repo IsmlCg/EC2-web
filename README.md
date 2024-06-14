@@ -32,16 +32,22 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `npm run eject`
 
 ### 
-sudo su -
-yum update -y
-sudo yum install git -y
- git clone https://github.com/IsmlCg/EC2-web.git
- cd EC2
- curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
- sudo yum install -y nodejs
-sudo amazon-linux-extras install nginx1.12
-sudo systemctl start nginx
-sudo systemctl enable nginx
-sudo nano /etc/nginx/nginx.conf
-npm install react-scripts --save-dev
+###    sudo su -
+###    yum update -y
+###    sudo yum install git -y
+###    git clone https://github.com/IsmlCg/EC2-web.git
+###    cd EC2
+###    curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+###    sudo yum install -y nodejs
+###    sudo amazon-linux-extras install nginx1.12
+###    sudo systemctl start nginx
+###    sudo systemctl enable nginx
+###    sudo nano /etc/nginx/nginx.conf
+###    npm install react-scripts --save-dev
+
+
+
+npm install @heroicons/react
+
+npm install @headlessui/react
 
