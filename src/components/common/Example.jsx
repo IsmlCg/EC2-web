@@ -1,4 +1,3 @@
-import { Fragment } from "react";
 import {
   Disclosure,
   DisclosureButton,
@@ -10,14 +9,11 @@ import {
   Transition,
 } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
-import avatar from "../../assets/images/avatar.png";
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+import { classNames } from "./Navbar";
 
-export default function Header() {
+export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-white shadow rounded-lg">
+    <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -45,25 +41,25 @@ export default function Header() {
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
                   <a
-                    href="/"
+                    href="#"
                     className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
                   >
                     Dashboard
                   </a>
                   <a
-                    href="/"
+                    href="#"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   >
                     Team
                   </a>
                   <a
-                    href="/"
+                    href="#"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   >
                     Projects
                   </a>
                   <a
-                    href="/"
+                    href="#"
                     className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                   >
                     Calendar
@@ -88,7 +84,7 @@ export default function Header() {
                       <span className="sr-only">Open user menu</span>
                       <img
                         className="h-8 w-8 rounded-full"
-                        src={avatar}
+                        src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                         alt=""
                       />
                     </MenuButton>
@@ -105,7 +101,7 @@ export default function Header() {
                       <MenuItem>
                         {({ focus }) => (
                           <a
-                            href="/"
+                            href="#"
                             className={classNames(
                               focus ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
@@ -118,7 +114,7 @@ export default function Header() {
                       <MenuItem>
                         {({ focus }) => (
                           <a
-                            href="/"
+                            href="#"
                             className={classNames(
                               focus ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"
@@ -131,7 +127,7 @@ export default function Header() {
                       <MenuItem>
                         {({ focus }) => (
                           <a
-                            href="/"
+                            href="#"
                             className={classNames(
                               focus ? "bg-gray-100" : "",
                               "block px-4 py-2 text-sm text-gray-700"

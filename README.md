@@ -44,3 +44,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ###    sudo systemctl enable nginx
 ###    sudo nano /etc/nginx/nginx.conf
 ###    npm install react-scripts --save-dev
+
+
+
+npm install @heroicons/react
+
+npm install @headlessui/react
+
