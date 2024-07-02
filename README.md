@@ -46,6 +46,10 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ###    npm install react-scripts --save-dev
 
 
+### Install
+### `Install` fails to minify
+
+
 
 npm install @heroicons/react
 
