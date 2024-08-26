@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
       <div className=" mx-auto bg-gradient-to-b from-green-200 from-10% via-orange-100 via-30% to-orange-50 to-90%">
         <Header />
         {children}
-        <Footer />
+        <Footer company="Soft-izzy" />
       </div>
     </>
   );

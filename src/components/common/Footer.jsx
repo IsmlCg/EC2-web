@@ -1,7 +1,7 @@
 const navigation = [
   {
     name: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/profile.php?id=100004360593536",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -14,7 +14,7 @@ const navigation = [
   },
   {
     name: "Instagram",
-    href: "#",
+    href: "https://www.instagram.com/isml08/",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -36,7 +36,7 @@ const navigation = [
   },
   {
     name: "GitHub",
-    href: "#",
+    href: "https://github.com/IsmlCg",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -49,7 +49,7 @@ const navigation = [
   },
   {
     name: "YouTube",
-    href: "#",
+    href: "https://www.youtube.com/channel/UCzOUF87uG9U0pN8dK8Iz_dw",
     icon: (props) => (
       <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
         <path
@@ -62,7 +62,8 @@ const navigation = [
   },
 ];
 
-export default function Footer() {
+export default function Footer({ company }) {
+  const year = new Date().getFullYear();
   return (
     <footer className="bg-white-">
       <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
@@ -80,7 +81,7 @@ export default function Footer() {
         </div>
         <div className="mt-8 md:order-1 md:mt-0">
           <p className="text-center text-xs leading-5 text-gray-500">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+            &copy; {year} {company}, Inc. All rights reserved.
           </p>
         </div>
       </div>
